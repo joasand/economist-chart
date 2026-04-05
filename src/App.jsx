@@ -60,7 +60,7 @@ export default function App() {
     </>
   ));
 
-  const allBars = data.sort((a, b) => b.count - a.count).map((d, i) => (
+  const allBars = [...data].sort((a, b) => b.count - a.count).map((d, i) => (
     <>
     <g key={i}>
       <rect
